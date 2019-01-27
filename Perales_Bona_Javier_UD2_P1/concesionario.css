@@ -1,0 +1,324 @@
+body {
+    font-family:serif;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', serif;
+
+
+}
+
+.header {
+    grid-area: header;
+    background-image: url(imagenes/header.png);
+}
+
+.menuHor {
+    grid-area: menuHor;
+}
+
+.menuVer {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    height: 95vh;
+    width: 100%;
+    grid-template-rows: 80px 80px 400px 120px;
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu menuHor menuHor menuHor menuHor menuHor'
+        'menu main main main main main'
+        'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #f9ac2f;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+div .header {
+    background-color: #FFCE7F;
+}
+
+div .menuHor {
+    background-color: #f9ac2f;
+}
+
+div .menuHor ul {
+    background-color: #FFCE7F;
+}
+
+div .menuVer {
+    background-color: #f9ac2f;
+}
+
+.menuVer {
+    width: 200px;
+    padding: 0;
+    padding-top: 5px;
+    background-color: #f9ac2f;
+}
+
+.menuVer a {
+    background-color: #f9ac2f;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.menuVer a:hover {
+    background-color: #f9ac2f;
+    color: white;
+}
+
+.menuHor ul li {
+    background-color: #FFCE7F;
+    border: 5px;
+    border-color: black;
+}
+
+div .menuHor {
+    width: auto;
+    height: auto;
+
+}
+
+.menuHor ul {
+
+    position: absolute;
+    list-style: none;
+    margin-left: auto;
+    margin: 10px;
+    padding: 10px;
+    margin-top: auto;
+    padding-left: 33%;
+}
+
+.menuHor ul a {
+
+    display: grid;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.menuHor ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.menuHor ul li:hover {
+    background-color: #DA8A09;
+}
+
+.menuHor ul ul {
+    display: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+
+.menuHor ul ul li {
+    float: none;
+    width: 200px;
+}
+
+
+.menuHor ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+.menuHor ul li:hover > ul {
+    display: block;
+}
+
+.footer {
+    position: relative;
+    padding-bottom: 0;
+}
+
+.footer ul {
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f9ac2f;
+    
+}
+
+.footer li a{
+     display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    background-color: #FFCE7F;
+    color: white;
+    
+}
+.footer ul li {
+    font-size: 15px;
+    text-align: left;
+}
+
+div .footer {
+    background-color: #DB8A08;
+}
+
+div .foto1 {
+    border-radius: 10px;
+    background-color: #fff1dd;
+    color: black;
+    width: 90%;
+    height: 200px;
+
+}
+
+div .foto1 img {
+    float: left;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+div .foto1 p {
+    text-align: left;
+    font-size: 20px;
+}
+
+div.main {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #FFCE7F;
+}
+
+.header label {
+    position: inherit;
+    font-size: 15px;
+    float: right;
+
+}
+
+.header input {
+    float: right;
+
+}
+
+div .social {
+
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+}
+
+.social ul {
+    float: right;
+    list-style: none;
+    display: flex;
+}
+
+.social ul li a {
+    display: block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: 30px;
+}
+
+
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+.social ul li .icon-youtube {
+    background: red;
+}
+
+.social ul li .icon-twitter {
+    background: #00abf0;
+}
+
+.social ul li .icon-mail {
+    background: #666666;
+}
+
+.social ul li .icon-whatsapp {
+    background: green;
+}
+
+.social ul li a:hover {
+    padding: 10px 30px;
+    background: #000;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?u3mi28');
+    src: url('fonts/icomoon.eot?u3mi28#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?u3mi28') format('truetype'),
+        url('fonts/icomoon.woff?u3mi28') format('woff'),
+        url('fonts/icomoon.svg?u3mi28#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+    content: "\ea83";
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
