@@ -1,0 +1,124 @@
+body{
+    background-color: #FFCE7F;
+    
+}
+
+/*header*/
+
+header{
+  position:static;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  height: 158px;
+  background: #f9ac2f;
+  color: white;
+  transition: all 0.4s ease;
+    
+}
+/*menu horizontal*/
+
+.grid-menuHor ul li {
+    background-color:#f9ac2f;
+    
+}
+
+.grid-menuHor ul {
+    position:static;
+	list-style:none;
+    margin-left: auto;
+	margin:10px;
+	padding:10px;
+    margin-top: auto;
+    padding-left: 33%;
+}
+
+.grid-menuHor ul a {
+	display:grid;
+	color:#fff;
+	text-decoration:none;
+	font-weight:400;
+	font-size:15px;
+	padding:10px;
+  letter-spacing:1px;
+}
+
+.grid-menuHor ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.grid-menuHor ul li:hover {
+	background:#ffd59b;
+}
+
+.grid-menuHor ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	padding:0;
+}
+.grid-menuHor ul ul li {
+	float:none;
+	width:150px
+}
+.grid-menuHor ul ul a {
+	line-height:120%;
+	padding:10px 15px;
+}
+.grid-menuHor ul li:hover > ul {
+	display:block;
+}
+
+/*menu vertical*/
+.grid-menuVer {
+    width: 200px;
+    padding: 0;
+    padding-top: 5%;
+}
+
+.grid-menuVer a {
+    background-color: #f9ac2f;
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.grid-menuVer a:hover {
+    background-color: #ffd59b;
+}
+
+.grid-menuVer a.active {
+    background-color: #ffd59b;
+    color: white;
+}
+
+/*grid body*/
+.grid-body{
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    
+    
+}
+
+/*footer*/
+
+.grid-footer{
+    position: relative;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9ac2f;
+    color:white;
+    text-align: center;
+}
+
+.grid-footer ul{
+    list-style: none;
+}
+
