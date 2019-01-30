@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="multimedia.css">
+
+</head>
+
+<body>
+
+    <div id="videoY">
+        <video id="boton" autoplay controls>
+            <source src="anucioDef.mp4" type="video/mp4">
+            <img src="imagenes/header.png">
+            <track src="subs-es.vtt" srclang="es" label="Español" default>
+            <track src="subs-en.vtt" srclang="en" label="English">
+        </video>
+    </div>
+
+
+
+    <div>
+        <button onclick="document.getElementById('boton').play()" id="boton">play</button>
+        <button onclick="document.getElementById('boton').pause()" id="boton">pause</button>
+        <button onclick="document.getElementById('boton').volume+=0.1" id="boton">subir</button>
+        <button onclick="document.getElementById('boton').volume-=0.1" id="boton">bajar</button>
+    </div>
+
+
+</body>
+</html>
