@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #f9ac2f;
 }
 
@@ -6,11 +6,11 @@ div {
     text-align: center;
 }
 
-head{
+head {
     text-align: center;
 }
 
-#boton{
+#boton {
     text-decoration: none;
     padding: 3px;
     padding-left: 10px;
@@ -25,7 +25,17 @@ head{
     border: 3px double #006505;
 }
 
- #boton:hover{
+#boton:hover {
     opacity: 0.6;
     text-decoration: none;
-  }
+}
+
+     .enlaceboton {
+        font-family: verdana, arial, sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+        padding: 4px;
+        background-color: #ffffcc;
+        color: #666666;
+        text-decoration: none;
+    }
