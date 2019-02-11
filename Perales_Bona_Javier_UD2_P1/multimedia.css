@@ -25,6 +25,16 @@ head {
     border: 3px double #006505;
 }
 
+ .mostrar{
+    
+     margin:auto;
+     display: block;
+}
+.ocultar{
+    margin: auto;
+    display: block;
+}
+
 #boton:hover {
     opacity: 0.6;
     text-decoration: none;

@@ -5,22 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="multimedia.css">
 </head>
 
 <body>
+     <script src="jquery.js"></script>
+    <button id="boton" class="ocultar" value="ocultar">ocultar</button>
+    <button id="boton" class="mostrar" value="mostrar">mostrar</button>
+    <div class="contenedorAudio">
+        <div class="slide">
 
-    <div>
-        <audio id="player" controls>
-            <source src="audio.mp3" type="audio/mpeg">
-        </audio>
-        <br>
-    </div>
-    <div>
-        <button onclick="document.getElementById('player').play()" id="boton">play</button>
-        <button onclick="document.getElementById('player').pause()" id="boton">pause</button>
-        <button onclick="document.getElementById('player').volume+=0.1" id="boton">subir</button>
-        <button onclick="document.getElementById('player').volume-=0.1" id="boton">bajar</button>
+
+            <audio id="player" controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+
+            <br>
+        </div>
+
+        <div>
+            <button onclick="document.getElementById('player').play()" id="boton">play</button>
+            <button onclick="document.getElementById('player').pause()" id="boton">pause</button>
+            <button onclick="document.getElementById('player').volume+=0.1" id="boton">subir</button>
+            <button onclick="document.getElementById('player').volume-=0.1" id="boton">bajar</button>
+        </div>
     </div>
     <a href="concesionario.html" class="enlaceboton">volver</a>
 </body>
