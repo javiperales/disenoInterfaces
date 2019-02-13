@@ -35,6 +35,11 @@ head {
     display: block;
 }
 
+.desplegar{
+    margin: auto;
+    display: block;
+}
+
 #boton:hover {
     opacity: 0.6;
     text-decoration: none;
