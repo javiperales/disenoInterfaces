@@ -25,17 +25,18 @@ head {
     border: 3px double #006505;
 }
 
- .mostrar{
-    
-     margin:auto;
-     display: block;
-}
-.ocultar{
+.mostrar {
+
     margin: auto;
     display: block;
 }
 
-.desplegar{
+.ocultar {
+    margin: auto;
+    display: block;
+}
+
+.desplegar {
     margin: auto;
     display: block;
 }
@@ -45,12 +46,12 @@ head {
     text-decoration: none;
 }
 
-     .enlaceboton {
-        font-family: verdana, arial, sans-serif;
-        font-size: 10pt;
-        font-weight: bold;
-        padding: 4px;
-        background-color: #ffffcc;
-        color: #666666;
-        text-decoration: none;
-    }
+.enlaceboton {
+    font-family: verdana, arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 4px;
+    background-color: #ffffcc;
+    color: #666666;
+    text-decoration: none;
+}

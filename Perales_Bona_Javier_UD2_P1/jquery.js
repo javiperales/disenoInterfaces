@@ -1,15 +1,18 @@
  $(document).ready(function () {
      fade();
+     fade2();
      ocultar();
      mostrar();
      deslizar();
+     animate();
      $(".mostrar").hide();
+     $(".formulario").hide();
  });
 
 
 
  var fade = function () {
-     $(".foto1").hover( function () {
+     $(".foto1").click(function () {
          $(this).fadeIn("slow", function () {
              $(".foto1").css({
                  "background-color": "yellow",
@@ -17,16 +20,20 @@
                  "with": "95%",
                  "height": "300px"
              });
-
          })
-     }).fadeIn(function(){
-         $(".foto1").css({
-             "background-color": "#fff1dd",
-                 "font-size": "100%",
+     })
+ }
+
+ var fade2 = function () {
+     $(".foto1").hover(function () {
+         $(this).fadeIn("slow", function () {
+             $(".foto1").css({
+                 "background-color": "#fff1dd",
                  "with": "90%",
                  "height": "200px"
+             });
          })
-     });
+     })
  }
 
  var ocultar = function () {
@@ -48,5 +55,11 @@
  var deslizar = function () {
      $(".desplegar").click(function () {
          $(".videoY").slideToggle("fast");
+     });
+ }
+
+ var animate = function () {
+     $("#login").click(function () {
+         $(".formulario").toggle();
      });
  }
