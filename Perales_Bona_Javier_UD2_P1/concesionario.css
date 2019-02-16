@@ -1,5 +1,5 @@
 body {
-    font-family:serif;
+    font-family: serif;
     font-family: 'Noto Sans SC', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Merriweather', serif;
@@ -167,26 +167,27 @@ div .menuHor {
 }
 
 .footer ul {
-     list-style-type: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
     background-color: #f9ac2f;
-    
+
 }
 
-.footer li a{
-     display: block;
+.footer li a {
+    display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
 }
 
-.footer a:hover{
+.footer a:hover {
     background-color: #FFCE7F;
     color: white;
-    
+
 }
+
 .footer ul li {
     font-size: 15px;
     text-align: left;
@@ -338,7 +339,7 @@ div .social {
     background-color: #ffffcc;
     color: #666666;
     text-decoration: none;
-     text-decoration: none;
+    text-decoration: none;
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
@@ -350,5 +351,13 @@ div .social {
     background-color: #white;
     border-radius: 15px;
     border: 3px double #006505;
-    float:right;
+    float: right;
+}
+
+#contacto {
+    margin: auto;
+    height: 100%;
+    display: none;
+    width: 100%;
+    
 }

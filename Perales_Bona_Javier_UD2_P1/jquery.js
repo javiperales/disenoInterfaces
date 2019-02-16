@@ -1,40 +1,13 @@
  $(document).ready(function () {
-     fade();
-     fade2();
      ocultar();
      mostrar();
      deslizar();
-     animate();
+     deslizarlogin();
+     contacto();
      $(".mostrar").hide();
      $(".formulario").hide();
+
  });
-
-
-
- var fade = function () {
-     $(".foto1").click(function () {
-         $(this).fadeIn("slow", function () {
-             $(".foto1").css({
-                 "background-color": "yellow",
-                 "font-size": "200%",
-                 "with": "95%",
-                 "height": "300px"
-             });
-         })
-     })
- }
-
- var fade2 = function () {
-     $(".foto1").hover(function () {
-         $(this).fadeIn("slow", function () {
-             $(".foto1").css({
-                 "background-color": "#fff1dd",
-                 "with": "90%",
-                 "height": "200px"
-             });
-         })
-     })
- }
 
  var ocultar = function () {
      $(".ocultar").click(function () {
@@ -54,12 +27,27 @@
 
  var deslizar = function () {
      $(".desplegar").click(function () {
-         $(".videoY").slideToggle("fast");
+         $(".videoY").fadeToggle("slow");
      });
  }
 
- var animate = function () {
+ var deslizarlogin = function () {
      $("#login").click(function () {
-         $(".formulario").toggle();
+         $(".formulario").slideToggle();
      });
  }
+
+ var contacto = function () {
+     $(".contacto").click(function () {
+         $(".contacto").animate({
+             marginLeft: '200px',
+         }, 1000, 'swing').animate({
+             marginLeft: '0px',
+         }, 1000, 'linear', mostrarCartel);
+     })
+ }
+ var mostrarCartel = function () {
+     $("#contacto").slideDown(); 
+ }
+ 
+ 
