@@ -44,6 +44,9 @@ body {
         'header header header header header header'
         'menu menuHor menuHor menuHor menuHor menuHor'
         'menu main main main main main'
+        'menu main main main main main'
+
+
         'footer footer footer footer footer footer';
     grid-gap: 10px;
     background-color: #f9ac2f;
@@ -360,3 +363,52 @@ div .social {
     display: none;
     width: 100%;
 }
+
+/*********MEDIA QUERYS*********/
+
+
+
+@media scren and (max-width: 1000px) {
+    .menuHor ul a {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+
+@media scren and (max-width: 800px) {
+    .menuVer {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width :800px){
+    div .foto1 p{
+        font-size: 10px;
+    }
+    
+    div .foto1 h4{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width :900px){
+    div .foto1 p{
+        font-size: 13px;
+    }
+    div .foto1 h4{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width :750px){
+    div .foto1 p{
+        font-size: 8px;
+    }
+    div .foto1 h4{
+        font-size: 15px;
+    }
+}
+
