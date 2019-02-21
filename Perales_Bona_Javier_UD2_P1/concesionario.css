@@ -51,9 +51,9 @@ body {
     grid-template-areas:
         'header header header header header header'
         'menuHor menuHor menuHor menuHor menuHor menuHor'
-        'main main main main main main'
-        'main main main main main main'
-        'main main main main main main'
+        'menu main main main main main'
+        'menu main main main main main'
+        'menu main main main main main'
         'footer footer footer footer footer footer';
 
     grid-gap: 10px;
@@ -349,7 +349,7 @@ div .social {
     font-size: 10pt;
     font-weight: bold;
     padding: 4px;
-    background-color: #ffffcc;
+    background-color:brown;
     color: #666666;
     text-decoration: none;
     text-decoration: none;
@@ -360,11 +360,13 @@ div .social {
     font-weight: 300;
     font-size: 25px;
     font-style: italic;
-    color: #black;
-    background-color: #white;
+    color: black;
+    background-color: white;
     border-radius: 15px;
     border: 3px double #006505;
     float: right;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 #contacto {
@@ -424,9 +426,15 @@ div .social {
     }
 }
 
+@media screen and (max-width: 375px){
+    .menuVer a{
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .menuVer {
-        display: block;
+    
         float: none;
         width: 100%;
     }
