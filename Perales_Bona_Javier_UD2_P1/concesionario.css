@@ -74,10 +74,12 @@ div .header {
 
 div .menuHor {
     background-color: #f9ac2f;
+    display: flex;
 }
 
 div .menuHor ul {
     background-color: #FFCE7F;
+    display: flex;
 }
 
 div .menuVer {
@@ -173,7 +175,7 @@ div .menuHor {
 }
 
 .footer {
-    position:relative;
+    position: relative;
     padding-bottom: 0;
 
 }
@@ -237,7 +239,7 @@ div.main {
     height: 100%;
     //overflow: auto;
     background-color: #FFCE7F;
-    display:block;
+    display: block;
 }
 
 .header label {
@@ -349,7 +351,7 @@ div .social {
     font-size: 10pt;
     font-weight: bold;
     padding: 4px;
-    background-color:brown;
+    background-color: brown;
     color: #666666;
     text-decoration: none;
     text-decoration: none;
@@ -377,72 +379,72 @@ div .social {
 }
 
 /*********MEDIA QUERYS*********/
-@media screen and (max-width:360px) {
-    .grid-container {
-        width: 33%;
-        height: 60%;
-
-    }
-
-}
-
-@media screen and (max-width:375px) {
-    .menuVer a {
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width:375px) {
-    input {
-        width: 30%;
-    }
-}
 
 
-@media screen and (max-width: 800px) {
-    .menuHor ul a {
-        display: block;
-        float: none;
-        width: 10%;
-        height: 30%;
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .menuHor ul a {
-        display: block;
-        float: none;
-        width: 10%;
-        height: 30%;
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
     .foto1 {
         top: 200px;
-
     }
-}
 
-@media screen and (max-width: 375px){
-    .menuVer a{
-        font-size: 10px;
+    div .foto1 p {
+        font-size: 13px;
     }
-}
 
-@media screen and (max-width: 800px) {
+    .grid-container {
+        display: grid;
+
+        grid-template-areas:
+            'header'
+            'menuHor'
+            'menu'
+            'main'
+            'main'
+            'footer';
+
+        grid-gap: 10px;
+        background-color: #f9ac2f;
+        padding: 10px;
+    }
+
+    .menuVer a {
+        font-size: 30px;
+    }
+
     .menuVer {
-    
+        height: 50%
+    }
+
+    div .menuHor ul {
+        width: 100%;
+        display: block;
+
+    }
+
+    .menuHor ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+        display: none;
+}
+    h4 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+/*@media screen and (max-width: 800px) {
+    .menuVer {
+
         float: none;
         width: 100%;
     }
-}
+}*/
 
-@media screen and (max-width :800px) {
+/*@media screen and (max-width :800px) {
     div .foto1 p {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     div .foto1 h4 {
@@ -468,4 +470,5 @@ div .social {
     div .foto1 h4 {
         font-size: 15px;
     }
-}
+
+}*/
