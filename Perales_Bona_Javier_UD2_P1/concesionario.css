@@ -73,6 +73,7 @@ div .menuHor {
 div .menuHor ul {
     background-color: #FFCE7F;
     display: flex;
+
 }
 
 div .menuVer {
@@ -84,6 +85,7 @@ div .menuVer {
     padding: 0;
     padding-top: 5px;
     background-color: #f9ac2f;
+
 }
 
 .menuVer a {
@@ -91,6 +93,7 @@ div .menuVer {
     color: black;
     display: block;
     text-decoration: none;
+    text-align: left;
 }
 
 .menuVer a:hover {
@@ -339,11 +342,13 @@ div .social {
 }
 
 .enlaceboton {
+
+
     font-family: verdana, arial, sans-serif;
     font-size: 10pt;
     font-weight: bold;
     padding: 4px;
-    background-color: brown;
+    /* background-color: brown;*/
     color: #666666;
     text-decoration: none;
     text-decoration: none;
@@ -361,6 +366,9 @@ div .social {
     float: right;
     padding-right: 20px;
     padding-left: 20px;
+
+
+
 }
 
 #contacto {
@@ -372,6 +380,44 @@ div .social {
 
 /*********MEDIA QUERYS*********/
 
+
+
+    @media screen and (max-width: 1025px) {
+        .menuVer {
+
+            float: none;
+            width: 100%;
+        }
+
+        div .foto1 p {
+            font-size: 20px;
+        }
+
+        div .foto1 h4 {
+            font-size: 23px;
+        }
+
+
+        div .foto1 p {
+            font-size: 8px;
+        }
+
+        div .foto1 h4 {
+            font-size: 15px;
+        }
+
+        div .foto1 p {
+            font-size: 13px;
+        }
+
+        div .foto1 h4 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
 
 @media screen and (max-width: 450px) {
     .foto1 {
@@ -400,6 +446,8 @@ div .social {
 
     .menuVer a {
         font-size: 30px;
+        text-align: center;
+        width: 100%;
     }
 
     .menuVer {
@@ -413,10 +461,18 @@ div .social {
     }
 
     .menuHor ul ul a {
-    line-height: 120%;
-    padding: 10px 15px;
+        line-height: 120%;
+        padding: 10px 15px;
         display: none;
-}
+        
+    }
+    
+    .menuHor ul a {
+        
+        text-align: center;
+        text-decoration: none;
+    }
+
     h4 {
         font-size: 22px;
     }
@@ -424,43 +480,123 @@ div .social {
     p {
         font-size: 13px;
     }
-}
 
-/*@media screen and (max-width: 800px) {
-    .menuVer {
+    div .main {
+        width: 100%;
+        height: 100%;
+    }
 
-        float: none;
+    .header {
         width: 100%;
     }
-}*/
 
-/*@media screen and (max-width :800px) {
-    div .foto1 p {
-        font-size: 15px;
+    .footer a {
+        margin: 0%;
+        padding: 0;
+        float: left;
+        position: relative;
+        width: 100%;
     }
-
-    div .foto1 h4 {
-        font-size: 23px;
+    
+    div .footer{
+        width: 100%;
     }
+    
+    .footer ul{
+        width: 100%;
+        background-color: #DB8A08;
+    }
+    
 }
 
-@media screen and (max-width :900px) {
+@media screen and (max-width: 380px) {
+    .foto1 {
+        top: 200px;
+    }
+
     div .foto1 p {
+        font-size: 11px;
+    }
+
+    .grid-container {
+        display: grid;
+
+        grid-template-areas:
+            'header'
+            'menuHor'
+            'menu'
+            'main'
+            'main'
+            'footer';
+
+        grid-gap: 10px;
+        background-color: #f9ac2f;
+        padding: 10px;
+    }
+
+    .menuVer a {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menuVer {
+        height: 50%
+    }
+
+    div .menuHor ul {
+        width: 100%;
+        display: block;
+
+    }
+
+    .menuHor ul ul a {
+        line-height: 120%;
+        padding: 10px 15px;
+        display: none;
+        
+    }
+    
+    .menuHor ul a {
+        
+        text-align: center;
+        text-decoration: none;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    p {
         font-size: 13px;
     }
 
-    div .foto1 h4 {
-        font-size: 20px;
+    div .main {
+        width: 100%;
+        height: 100%;
     }
+
+    .header {
+        width: 100%;
+    }
+
+    .footer a {
+        margin: 0%;
+        padding: 0;
+        float: left;
+        position: relative;
+        width: 100%;
+    }
+    
+    div .footer{
+        width: 100%;
+    }
+    
+    .footer ul{
+        width: 100%;
+        background-color: #DB8A08;
+    }
+    
 }
 
-@media screen and (max-width :750px) {
-    div .foto1 p {
-        font-size: 8px;
-    }
 
-    div .foto1 h4 {
-        font-size: 15px;
-    }
-
-}*/

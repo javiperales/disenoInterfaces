@@ -51,7 +51,8 @@ head {
     font-size: 10pt;
     font-weight: bold;
     padding: 4px;
-    background-color: #ffffcc;
+    background-color: whitesmoke;
     color: #666666;
     text-decoration: none;
+    border-color: black;
 }
