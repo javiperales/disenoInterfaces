@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+}
+#navegacion{
+     background-color: #f03c01;
+}
+
+#navegacion ul{
+    
+   list-style: none;  
+}
+
+#navegacion ul li{
+   float:left;
+    background-color: #f03c01;
+}
+
+#navegacion ul li a{
+    color:black;
+   
+}
+
+#main{
+    clear: both;
+   
+}
+hr{
+    clear: both;
+}
