@@ -1,0 +1,40 @@
+a {
+    text-decoration: none;
+
+}
+
+/*nav#navegacion {
+    background-color: #f03c01;
+}*/
+
+#navegacion ul {
+
+    list-style: none;
+}
+
+#navegacion ul li {
+    float: left;
+    /* background-color: #f03c01;*/
+}
+
+#navegacion ul li a {
+    color: black;
+    border-bottom: 3px solid #f03c01;
+    padding: 10px 5px;
+    display: block;
+
+}
+
+#navegacion ul li a:hover{
+    
+    border-bottom: 3px solid #0F499E;
+}
+
+#main {
+    clear: both;
+
+}
+
+hr {
+    clear: both;
+}
