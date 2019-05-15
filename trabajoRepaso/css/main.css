@@ -1,94 +1,134 @@
 a {
     text-decoration: none;
-    padding: 7px 14px;
-    display: block;
-    
-    
 }
 
+ul {
+    list-style-type: none;
+}
 
-
-#navegacion {
-    background-color:white;
+#menu {
+    /*background-color: #f03c01;*/
     width: 100%;
     height: 2rem;
-    border-bottom: 3px solid #f03c01;
+    border-bottom: 5px solid #f03c01;
 }
 
-#navegacion ul {
+#menu ul {}
 
-    list-style: none;
-}
-
-#navegacion ul li {
+#menu ul li {
     float: left;
     /* background-color: #f03c01;*/
 }
 
-#navegacion ul li a {
+#menu ul li a {
     color: black;
-    border-bottom: 3px solid #f03c01;
+    padding: 0.438rem;
+    display: block;
+    border-bottom: 5px solid #f03c01;
     text-align: center;
-   
-
 }
 
-#navegacion ul li a:hover{
-    
-    border-bottom: 3px solid #0F499E;
+#menu ul li a:hover {
+    border-bottom: 5px solid #0f499e;
 }
 
 #main {
-    clear: both;
-
+    background-color: red;
+    clear: left;
+}
+/*promociones*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
 }
 
-hr {
-    clear: both;
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
 
-@media screen and  (max-width: 600px) and (orientation:portrait) {
+.flex-container{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: skyblue;
+}
 
-    #menu ul li ,#menu ul li a {
-       float:none;
-       width:100%;
-        border-left: 3px solid #f03c01;
+.flex-container >div{
+    width: 23%;
+    margin: 10px auto 10px auto;
+    padding:auto;
+    text-align: center;
+}
+
+.flex-container >div>img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+    #menu {
+        height: auto;
+        /*por que no sabemos la altura dele elemento*/
+        border-bottom: none;
+
     }
-    
-    #menu{
-    
-       border-bottom: none;
-       height:auto;
-       
-   }
-   
+
+    #menu ul li a {
+        float: none;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    #menu ul li a:hover {
+        border-bottom: none;
+    }
+
+    #menu ul {
+        padding: 0;
+    }
+
+    #menu ul li {
+        float: none;
+    }
+
     #menu ul  li a:hover{ 
-   
-         border-bottom: none;
-           border-left: 3px  solid #0f499e;
-    } 
-   
-   
-    #menu ul  li a:active{ 
-       
-         border-bottom: none;
-         border-left: 3px  solid #0f499e;
-    } 
-    
-     #menu ul{
-       list-style-type:none;
-       margin:0;
-       padding-left:2%;	
-       overflow:hidden;
-       background-color:white;
-       
-       /*padding-inline-start:0; propiedad del estandar del user agent-navegador*/
-       padding:0;
-       
+
+        border-bottom: none;
+        border-left: 3px  solid #0f499e; 
+      
+   } 
+
+
+   #menu ul  li a:active{ 
+
+        border-bottom: none;
+         border-left: 3px  solid #0f499e; 
+   }
+
+    #main,
+    #footer {
+        background-color: aqua;
     }
-     #main{
-        clear:both; 
-       /* margin-top:50%;*/
+    #menu ul li a {
+        border-left: 5px solid #f03c01;
     }
-    
-    }
+    #menu ul li a:active {
+    border-left: 5px solid #0f499e;
+}
+
+
+.flex-container > div{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.promocion{
+    text-align: center;
+  
+}
+}
