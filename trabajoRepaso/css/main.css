@@ -61,13 +61,18 @@ ul {
 .flex-container >div{
     width: 23%;
     margin: 10px auto 10px auto;
-    padding:auto;
+    padding:15px;
     text-align: center;
+    background-color: green;
+    color:black;
+    font-size: 15px;
 }
 
+
 .flex-container >div>img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+   
 }
 @media screen and (max-width: 600px) and (orientation: portrait) {
 
