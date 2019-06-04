@@ -1,0 +1,84 @@
+.header{
+    grid-area: header;
+}
+.menu{
+    grid-area: menu;
+}
+.main{
+    grid-area: main;
+}
+.derecho{
+    grid-area: derecho;
+}
+.footer{
+    grid-area: footer;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header '
+        'derecho derecho derecho derecho derecho derecho '
+        'menu main main main main main'
+        'menu main main main main main'
+        'footer footer footer footer footer footer ';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-container > header, nav , main, footer{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+/*logo*/
+#logo{
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+#nombre{
+    font-size: 50px;
+}
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: black;
+    background-color: dimgrey;
+}
+.derecho a{
+    text-decoration: none;
+}
+.derecho li{
+    display: inline-block;
+    width:150px;
+    height:80px;
+    padding:5px 10px;
+    background-color:transparent;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+    position:relative;
+}
+.derecho li:hover{
+    background-color:#fff;
+    color:blue;
+    }
+
+.derecho li>ul{
+    display:none;
+    padding: 60px;
+    }
+.derecho li:hover>ul{
+        display:block;
+        position:absolute;
+        top:30px;
+        left:0px;
+  }
+ 
+
