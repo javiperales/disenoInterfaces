@@ -11,6 +11,7 @@ ul {
 #main{grid-area: main;}
 #foorter{grid-area: footer;}
 #aside{grid-area: aside;}
+#burger{grid-area:burger;}
 
 .grid-container{
     display: grid;
@@ -87,6 +88,13 @@ ul {
    
 }
 
+.burger{
+    display:none;
+}
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+
+
 #aside{
     border: 3px solid black;
     width: 100%;
@@ -96,20 +104,29 @@ ul {
 @media screen and (max-width: 600px) and (orientation: portrait) {
 
 
+
     .grid-container{
         display: grid;
     
         grid-template-areas:
         'header'
+        'burger'
         'menu '
         'main '
         'aside'
         'footer';
     }
+
+    .burger{
+        display: inline;
+    }
+
+
     #menu {
         height: auto;
         /*por que no sabemos la altura dele elemento*/
         border-bottom: none;
+        display: none;
 
     }
 
