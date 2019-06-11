@@ -59,7 +59,7 @@
     width:150px;
     height:80px;
     padding:5px 10px;
-    background-color:transparent;
+    background-color:pink;
     border:1px solid #000;
     text-align:center;
     color:#fff;
@@ -78,7 +78,71 @@
         display:block;
         position:absolute;
         top:30px;
-        left:0px;
+        left:-60px;
   }
+
+@media screen and (max-width: 600px) and (orientation:portrait){
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+            'header'
+            'derecho'
+            'menu'
+            'main'
+            'footer ';
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+#nombre{
+    font-size: 20px;
+    text-align: center;
+}
+.menu>ul>li>a{
+    font-size: 20px;
+}
+
+#resultados{
+    font-size: 20px;
+}
+
+.derecho>ul>li{
+    width: 100%;
+    left:-10%;
+}
+
+.derecho li>ul{
+    display:block;
+    padding: 60px;
+    }
+
+
+    .derecho li:hover{
+        background-color:#fff;
+        color:blue;
+        }
+
+        .derecho li:active{
+            background-color:#fff;
+            color:blue;
+            }
+
+
+    .derecho li:hover>ul{
+        display:block;
+        position:absolute;
+        top:30px;
+        left:-60px;
+  }
+
+  .derecho li:active>ul{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:-60px;
+}
+}
+
  
 

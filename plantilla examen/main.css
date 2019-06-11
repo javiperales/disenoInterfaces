@@ -1,0 +1,243 @@
+.header{
+    grid-area: header;
+}
+
+.horizontal{
+    grid-area: horizontal;
+}
+.vertical{
+    grid-area: vertical;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'horizontal horizontal horizontal horizontal horizontal horizontal'
+      'vertical main main main main main'
+      'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color:pink;
+    padding: 10px;
+  }
+  
+  .grid-container > header , nav , main, footer {
+    background-color:aqua;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .horizontal ul li{
+      float: left;
+      position: relative;
+      padding: 0 15px;
+      list-style: none;
+      width: 150px;
+      background-color: red;
+  }
+
+  .horizontal ul li a{
+      text-decoration: none;
+  }
+
+  .horizontal ul li >ul {
+      display:none;
+    
+  }
+
+  .horizontal ul li:hover a{
+      color:white;
+  }
+
+
+  .horizontal ul li:hover>ul{
+      display: block;
+      position: absolute;
+
+  }
+
+  .vertical ul{
+    list-style: none;
+  }
+
+  .vertical ul li>ul{
+    display: none;
+  }
+
+  .vertical ul li a{
+      text-decoration: none;
+      color:black;
+    /*  margin-left: -170px; */
+      
+  }
+
+  .vertical ul li{
+      position: relative;
+  }
+
+   .vertical ul li >ul li a{
+      float: left;
+  }
+ 
+  .vertical ul li:hover >ul{
+      display: block;
+      position: absolute;
+      left: 100px;
+      top:0;
+      background-color: blue;
+  }
+.vertical ul li:hover a{
+    color:white;
+}
+
+  .vertical ul li>ul li{
+      width: 150px;
+      z-index: 9999;
+  }
+
+  .footer ul li{
+      list-style: none;
+  }
+
+ .flexbox{
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+
+
+ @media screen and (max-width: 1024px){
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header'
+          'horizontal horizontal horizontal'
+          'vertical main main'
+          'footer footer footer';
+        grid-gap: 10px;
+        background-color:white;
+        padding: 10px;
+      }
+
+      .horizontal ul li{
+        float: left;
+        position: relative;
+        padding: 0 15px;
+        list-style: none;
+        width: 90px;
+        background-color: red;
+    }
+
+    .vertical ul li:hover >ul{
+        display: block;
+        position: absolute;
+        left: 70px;
+        top:0;
+        background-color: blue;
+    }
+ }
+
+ @media screen and (max-width: 600px) and (orientation: portrait) {
+
+    .header{
+        grid-area: header;
+    }
+    
+    .horizontal{
+        grid-area: horizontal;
+    }
+    .vertical{
+        grid-area: vertical;
+    }
+    .main{
+        grid-area: main;
+    }
+    .footer{
+        grid-area: footer;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'horizontal'
+      'vertical'
+      'main'
+      'footer';
+    grid-gap: 10px;
+    background-color:white;
+    padding: 10px;
+  }
+  
+  .horizontal ul li{
+      width: 100%;
+      left:-35px;
+      background-color:aqua;
+      display: block;
+
+  }
+
+  .horizontal ul li:hover>ul{
+      display: block;
+      position:absolute;
+      z-index:9999;  
+  }
+  .horizontal ul li:hover>ul li a{
+      color:blueviolet;
+  }
+
+  .horizontal ul li >ul li a:hover{
+      color:white;
+  }
+
+  .horizontal ul li >ul li a:active{
+    color:white;
+}
+  .horizontal ul li:active>ul{
+    display: block;
+    position:absolute;
+    z-index:9999;
+}
+
+.vertical ul li{
+    width: 100%;
+    left:-35px;
+    background-color:aqua;
+    display: block;
+}
+.vertical ul li:hover>ul{
+    display: block;
+    position:absolute;
+    z-index:9999;
+    
+}
+.vertical ul li:hover>ul{
+    display: block;
+    position:absolute;
+    z-index:9999;  
+    background-color: aqua;
+}
+
+.vertical ul li:active>ul{
+    display: block;
+    position:absolute;
+    z-index:9999;  
+    background-color: aqua;
+}
+.vertical ul li:hover>ul li a{
+    color:blueviolet;
+}
+
+.vertical ul li >ul li a:hover{
+    color:white;
+}
+
+ }
