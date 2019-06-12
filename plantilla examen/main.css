@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Oswald&display=swap');
+
+
+
+body{
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+}
+
+
+
 .header{
     grid-area: header;
+    font-family: Oswald;
 }
 
 .horizontal{
